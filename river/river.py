@@ -1,4 +1,7 @@
 # 《狼、羊、甘藍菜》過河的問題
+# 未使用演算法
+
+from datetime import datetime
 
 initial = ["wolf", "sheep", "cabbage"]
 right = []
@@ -31,5 +34,5 @@ def main():
         if len(left) == 2 and foodChain(left) == 1 or len(right) == 2 and foodChain(right) == 1:
             send(left, right)
             print("right: ", right, "\t left", left)
-    
+
 main()
